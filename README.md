@@ -100,4 +100,16 @@ OpenWebUI/
 ```
 
 ## 📤 Expected Output
+``` bash
+OpenWebUI/
+├── frontend/
+├── backend/
+├── docs/
+├── docker/
+├── scripts/
+├── .env.example
+├── docker-compose.yml
+├── README.md
+└── LICENSE
+```
 
