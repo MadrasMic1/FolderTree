@@ -33,13 +33,13 @@ A PowerShell script that creates folder and file structures based on an indented
 ### Specify Target Location
 
 ```powershell
-.\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "F:\Openwebui"
+.\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "F:\ProjectFolder"
 ```
 
 ### Full Path Example
 
 ```powershell
-D:\Scripts\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "F:\Openwebui"
+D:\Scripts\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "F:\ProjectFolder"
 ```
 
 ## 📝 Parameters
@@ -56,7 +56,7 @@ D:\Scripts\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "F:\Openwebui"
 
 ```powershell
 cat > tree.txt << 'EOF'
-OpenWebUI/
+ProjectFolder/
     frontend/
     backend/
     docs/
@@ -73,7 +73,7 @@ EOF
 
 ```powershell
 @"
-OpenWebUI/
+ProjectFolder/
 ├── frontend/
 ├── backend/
 ├── docs/
@@ -93,15 +93,15 @@ OpenWebUI/
 .\Create-From-Tree.ps1 -TreeFile "tree.txt"
 
 # Create in specific location
-.\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "F:\Openwebui"
+.\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "F:\ProjectFolder"
 
 # Create in nested directory
-.\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "D:\Projects\OpenWebUI"
+.\Create-From-Tree.ps1 -TreeFile "tree.txt" -TargetPath "D:\Projects\ProjectFolder"
 ```
 
 ## 📤 Expected Output
 ``` bash
-OpenWebUI/
+ProjectFolder/
 ├── frontend/
 ├── backend/
 ├── docs/
